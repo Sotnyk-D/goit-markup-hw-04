@@ -172,6 +172,9 @@ p {
 .hero .hero-title {
   margin-bottom: 30px;
   color: var(--pramery-white-color);
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -214,7 +217,7 @@ p {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
 }
 
 .feature-list .feature-text {
