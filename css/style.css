@@ -16,6 +16,7 @@
   --backgroundcolor-hero: #2f303a;
   --pramery-footer-color: #2f303a;
   --secondary-backgraund-color: #f5f4fa;
+  --primery-fill-color: #afb1b8;
 }
 
 /* Body */
@@ -144,10 +145,13 @@ p {
   margin-left: 50px;
 }
 
-.contakt-nav .contakt {
+.contakt-nav .contakt-mail,
+.contakt-nav .contakt-tel {
+  fill: var(--secondary-text-color);
   color: var(--secondary-text-color);
   text-decoration: none;
-  display: block;
+  display: flex;
+  text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -156,19 +160,55 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contakt-nav .contakt:hover,
-.contakt-nav .contakt:focus {
+.contakt-nav .contakt-mail:hover,
+.contakt-nav .contakt-mail:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.contakt-nav .contakt-tel:hover,
+.contakt-nav .contakt-tel:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.tel {
+  display: flex;
+  align-items: center;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 /* Hero */
 .hero {
+  width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/imeges/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   background-color: var(--backgroundcolor-hero);
   width: 100%;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .hero .hero-title {
   margin-bottom: 30px;
   color: var(--pramery-white-color);
@@ -227,6 +267,17 @@ p {
   font-size: 14px;
   line-height: 1.7;
   text-align: left;
+}
+
+.fonts {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  background-image: url(../imeges/backgr.svg);
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 55px;
 }
 
 /* Works */
@@ -294,6 +345,47 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+}
+
+/* Clients */
+
+.title-clients {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+
+  color: var(--prymery-text-color);
+}
+
+.icon-list {
+  display: flex;
+}
+
+.icon {
+  display: inline-block;
+  width: 106px;
+  height: 60px;
+  margin: 16px 32px;
+  fill: var(--primery-fill-color);
+}
+.icon:hover {
+  fill: var(--accent-color);
+}
+
+.icon-list .icon-clients {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-right: 30px;
+}
+
+.icon-list .icon-clients:last-child {
+  margin-right: 0;
 }
 
 /* Footer */
