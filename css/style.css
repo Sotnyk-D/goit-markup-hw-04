@@ -197,7 +197,7 @@ p {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/imeges/background.jpg);
+    url(../imeges/background.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
