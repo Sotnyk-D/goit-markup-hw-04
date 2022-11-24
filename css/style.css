@@ -347,6 +347,42 @@ p {
   line-height: 1.19;
 }
 
+/* Иконки на соц сети  */
+
+.social {
+  display: inline-flex;
+  margin-bottom: 30px;
+}
+
+.icon-social {
+  margin-right: 10px;
+}
+.icon-social:last-child {
+  margin-right: 0;
+}
+
+.icon-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 12px;
+  fill: var(--primery-fill-color);
+}
+
+.icon-link:hover {
+  background-color: var(--accent-color);
+  fill: var(--pramery-white-color);
+}
+
+.social-icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
+
 /* Clients */
 
 .title-clients {
@@ -460,6 +496,61 @@ p {
   color: var(--accent-color);
 }
 
+/* footer icon */
+
+.footer-container{
+   display:flex;
+  margin-left: 156px;
+
+}
+
+.footer-title-social {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--pramery-white-color);
+  text-align: center;
+  margin-bottom: 20px;
+ 
+
+}
+
+.footer-social {
+  display: inline-flex;
+}
+
+.footer-icon-social {
+  margin-right: 10px;
+}
+.footer-icon-social:last-child {
+  margin-right: 0;
+}
+
+.footer-icon-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 12px;
+  fill: var(--pramery-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon-link:hover {
+  background-color: var(--accent-color);
+  fill: var(--pramery-white-color);
+}
+
+.footer-social-icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
 /* Portfolio */
 
 .portfolio {
