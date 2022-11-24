@@ -372,7 +372,8 @@ p {
   fill: var(--primery-fill-color);
 }
 
-.icon-link:hover {
+.icon-link:hover,
+.icon-link:focus {
   background-color: var(--accent-color);
   fill: var(--pramery-white-color);
 }
@@ -542,7 +543,8 @@ p {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-icon-link:hover {
+.footer-icon-link:hover,
+.footer-icon-link:focus {
   background-color: var(--accent-color);
   fill: var(--pramery-white-color);
 }
